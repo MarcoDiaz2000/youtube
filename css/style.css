@@ -1,0 +1,165 @@
+
+/** global element styling **/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/** global classes styling **/
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  width: 150px;
+  margin-right: 500px;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+nav {
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#video > iframe {
+  max-width: 560px;
+  width: 100%;
+  height: 400px;
+  width: 800px;
+}
+
+
+#cont {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .section-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 10px;
+    border: 0px solid #000;
+    border-radius: 3px;
+  }
+  .section-video2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    border: 0px solid #000;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 800px) {
+    #cont {
+      flex-direction: column;
+    }
+    .section-video {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #cont {
+      flex-direction: column;
+    }
+    .section-video2 {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

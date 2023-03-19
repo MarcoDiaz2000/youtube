@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
-</head>
-<body>
-    <h1>Youtube Clone</h1>
-    <!--  -->
-    <div class="container">
-        <div class="row">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, incidunt!</p>
+    <link rel="stylesheet" href="css/style.css">
+   
+  </head>
+
+  <body>
+  
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img 
+          id="header-img" 
+          src="images/logoyoutube1.png"
+          alt="Logo Youtube Clone"
+          />
         </div>
-    </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><input class="search" type="search" name="search" id="search" placeholder="Search"></li>
+            <li><a class="nav-link" href="#">icon1</a></li>
+            <li><a class="nav-link" href="#">icon2</a></li>
+            <li><a class="nav-link" href="#">icon3</a></li>
+          </ul>
+        </nav>
+      </header>
        
+      <section id="cont">
+        <div class="section-video" >
+            <section id="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/isKVdffWTJo" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+              </section>
+        </div>
+       
+        <div class="section-video2" >
+          <div class="col-right"></div>
+                    <ol>
+            <li><img src="images/v1.jpg" alt=""></li>
+            <li><img src="images/v2.jpg" alt=""></li>
+            <li><img src="images/v3.jpg" alt=""></li>
+            <li><img src="images/v4.jpg" alt=""></li>
             
-</body>
+          </ol>
+        </div>
+      </section>
+
+     
+      
+        
+       
+      </div>
+    </div>
+  </body>
 </html>
